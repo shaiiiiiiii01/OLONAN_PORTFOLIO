@@ -14,7 +14,7 @@ export default function Header() {
       <div className="container header-inner">
         <Link to="/" className="brand">
           <Sparkle size={22} />
-          <span>JOYCE</span>
+          <span>MY PORTFOLIO</span>
         </Link>
         <nav className="nav" aria-label="Main navigation">
           {/* NavLink adds the "active" class automatically for the current page */}
