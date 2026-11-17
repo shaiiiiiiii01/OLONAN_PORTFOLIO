@@ -1,0 +1,63 @@
+/* ===== v19: mobile typography & spacing polish (desktop untouched) ===== */
+@media(max-width:719px){
+body{font-size:16px;line-height:1.65}
+.wrap{padding:0 20px}
+section{padding:56px 0}
+.tag{font-size:12px;margin-bottom:14px;gap:10px}.tag::before{width:22px}
+h2{font-size:clamp(28px,8.4vw,34px);line-height:1.08}
+/* hero */
+.htxt{padding-top:76px}
+.htxt h1{margin-top:20px}
+.htxt h1 .l1,.htxt h1 .l2{font-size:clamp(28px,8.6vw,36px);line-height:1.08}
+.htxt h1 .l2{margin-top:.18em}
+.meta{font-size:11.5px;gap:6px 16px}
+.hsub{font-size:14.5px;line-height:1.6;margin-top:16px;max-width:none}
+.sc{margin-top:28px;font-size:12px}.sc i{height:28px}
+.hpho{padding-top:76px}
+.hg{gap:28px}
+.hpho h2{font-size:clamp(28px,8.4vw,34px)}
+.lede{font-size:15px;line-height:1.65;margin-top:16px;max-width:none}
+.row{gap:10px;margin-top:22px}.row .btn{flex:1 1 auto;text-align:center;padding:12px 18px;font-size:14px}
+.mqs{margin-top:44px;padding:18px 0}.mqs.bt{margin-top:0}
+.mqs span{font-size:24px}.mqs .trk{gap:20px;padding-right:20px}
+/* stats */
+.statsec{padding:64px 0 56px}
+.statsec h2{font-size:clamp(26px,7.8vw,32px);max-width:none}
+.stats{margin-top:36px;border-radius:20px}
+/* about */
+.two{gap:22px}.two p{font-size:15px;line-height:1.7}.two p+p{margin-top:14px}
+/* skills */
+.cnt{top:58px;right:20px;font-size:11px}
+.gl{display:none}
+.tools{margin-top:28px}
+/* work */
+#car{margin-top:-8px}
+/* journey */
+.tl{padding-left:30px;margin-top:28px}
+.it{padding-bottom:30px}.it::before{left:-30px;width:14px;height:14px;top:7px}
+.it h3{font-size:24px}.it p{font-size:14.5px;line-height:1.6;max-width:none}
+/* now */
+.nowg{margin-top:28px;gap:18px}
+.tc{font-size:12px;line-height:1.8;padding:16px;min-height:170px}
+.tb{padding:10px 14px}.tb i{width:10px;height:10px}
+.card{padding:20px}.card h3{font-size:26px}.card li{font-size:14.5px;padding:9px 0}.card li span{font-size:11.5px;white-space:nowrap}
+/* contact */
+.big{font-size:clamp(17px,5.4vw,22px);line-height:1.25;overflow-wrap:anywhere;word-break:normal}
+#contact .two p{margin:14px 0 20px!important}
+.soc{gap:10px;margin-top:20px}.soc a{padding:9px 18px;font-size:14px}
+form{padding:20px;gap:14px;border-radius:20px}label{font-size:14px}
+input,textarea{padding:12px 14px}
+form .btn{width:100%;text-align:center}
+/* footer */
+footer .wrap{gap:6px;padding-top:20px;padding-bottom:64px;font-size:11.5px}
+/* 404 */
+.nf{padding:90px 0}.nf h2{font-size:30px}
+}
+@media(max-width:380px){
+.wrap{padding:0 16px}
+h2,.hpho h2{font-size:27px}
+.htxt h1 .l1,.htxt h1 .l2{font-size:27px}
+.tools{grid-template-columns:repeat(2,1fr)}
+.np{gap:8px}.logo span:last-child{font-size:13px}
+.pi h3{font-size:19px}
+}

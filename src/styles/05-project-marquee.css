@@ -1,0 +1,10 @@
+/* projects: endless right-to-left loop, edge to edge */
+#work{overflow-x:clip}
+#car.mq{display:block;overflow:hidden;scroll-snap-type:none;gap:0;padding:28px 0 64px;margin:-22px 0 -40px}
+.mqt{display:flex;width:max-content;animation:marq var(--dur,90s) linear infinite;will-change:transform}.cl{display:contents}
+.mq .pc{flex:0 0 min(88vw,920px);margin-right:24px}
+.mq:hover .mqt,.mq:focus-within .mqt,.mq:active .mqt{animation-play-state:paused}
+@keyframes marq{to{transform:translateX(-50%)}}
+/* tech marquee: endless right-to-left loop (the "sc" keyframes were missing) */
+.mqs .trk{animation-duration:var(--md,30s);will-change:transform}@keyframes sc{to{transform:translateX(-100%)}}
+.mqs.bt{margin-top:0}

@@ -1,0 +1,11 @@
+/* projects: screenshot on top, title + description below (all sizes) */
+.pc{grid-template-columns:1fr;grid-template-rows:auto 1fr}
+@media(min-width:720px){
+.mq .pc{flex:0 0 min(86vw,480px)}
+.sh{aspect-ratio:1100/618;min-height:0}
+.pi{padding:22px 24px 24px}.pi h3{font-size:clamp(24px,2.2vw,30px)}.pi h3.long{font-size:clamp(20px,1.8vw,24px)}
+.pi p{font-size:13.5px;line-height:1.6;margin-top:8px}
+.tags{margin-top:14px;gap:6px}.tags li{font-size:11.5px;padding:3px 10px}.acts{padding-top:16px}}
+@media(max-width:719px){
+.pi{padding:16px 18px 18px}.pi h3{font-size:clamp(20px,5.6vw,24px)}.pi h3.long{font-size:clamp(18px,4.9vw,21px)}
+.pi p{font-size:13px;line-height:1.55;margin-top:6px}.tags{margin-top:10px}.tags li{font-size:11px;padding:3px 9px}.acts{padding-top:10px}}
