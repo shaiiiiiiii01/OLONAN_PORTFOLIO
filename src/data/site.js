@@ -6,8 +6,8 @@ export const SITE = {
   // Web3Forms access key (free, from https://web3forms.com). It is safe to be public.
   // While empty, the contact form falls back to opening the visitor's email app.
   formAccessKey: 'fdfae137-1ff8-4a1c-81dc-73010c304e92',
-  title: 'Joyce Valerie Olonan | Aspiring Full-Stack Developer',
-  notFoundTitle: 'Page not found | Joyce Valerie Olonan',
+  title: 'Joyce Olonan',
+  notFoundTitle: 'Page not found | Joyce Olonan',
   version: 'v1.0.0',
   year: 2026,
   socials: [
