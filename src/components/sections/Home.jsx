@@ -20,7 +20,7 @@ function HeroText() {
           <span><b>status</b> Learning &amp; growing</span>
           <span><b>focus</b> Full-stack development</span>
         </Reveal>
-        <Typewriter as="h1" step={38} delay={400} mode="ready">
+        <Typewriter as="h1" step={38} delay={400} mode="view">
           <span className="l1">Aspiring <em>full-stack</em> developer</span>{' '}
           <span className="l2">Building ideas into <em>functional</em> digital experiences.</span>
         </Typewriter>

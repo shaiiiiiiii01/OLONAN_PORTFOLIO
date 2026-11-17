@@ -12,22 +12,26 @@ export function LoaderProvider({ children }) {
   const [ready, setReady] = useState(() => !root.classList.contains('ldg'));
   const [gone, setGone] = useState(() => !root.classList.contains('ldg'));
 
+  // Step 1: after 3s fade the page in and let entrance animations start.
   useEffect(() => {
     if (ready) return undefined;
-    let cleanup;
-    const show = setTimeout(() => {
+    const timer = setTimeout(() => {
       root.classList.add('ldo');
       setReady(true);
-      cleanup = setTimeout(() => {
-        root.classList.remove('ldg', 'ldo');
-        setGone(true);
-      }, 1000);
     }, 3000);
-    return () => {
-      clearTimeout(show);
-      clearTimeout(cleanup);
-    };
+    return () => clearTimeout(timer);
   }, [ready, root]);
+
+  // Step 2 (its own effect so step 1's cleanup can't cancel it): 1s later remove the loader classes
+  // that lock scrolling, and drop the loader.
+  useEffect(() => {
+    if (!ready || gone) return undefined;
+    const timer = setTimeout(() => {
+      root.classList.remove('ldg', 'ldo');
+      setGone(true);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, [ready, gone, root]);
 
   return <LoaderContext.Provider value={{ ready, gone }}>{children}</LoaderContext.Provider>;
 }
